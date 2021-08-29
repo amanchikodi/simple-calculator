@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>EXERCISE 9</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+function add1()
+{
+var nn1=Number(document.getElementById("n1").value);
+var nn2=Number(document.getElementById("n2").value);
+if(nn1==" " && nn2 ==" ")
+alert("Enter Num1 & Num2");
+else if(nn1==" ")
+alert("Enter Num1");
+else if(nn2==" ")
+alert("Enter Num2");
+else
+var su=nn1+nn2;
+document.getElementById("res").value = su;
+}
+function mul()
+{
+var nn1=Number(document.getElementById("n1").value);
+var nn2=Number(document.getElementById("n2").value);
+if(nn1==" " && nn2 ==" ")
+alert("Enter Num1 & Num2");
+else if(nn1==" ")
+alert("Enter Num1");
+else if(nn2==" ")
+alert("Enter Num2");
+else
+var su=nn1*nn2;
+document.getElementById("res").value = su;
+}
+function sub()
+{
+var nn1=Number(document.getElementById("n1").value);
+var nn2=Number(document.getElementById("n2").value);
+if(nn1==" " && nn2 ==" ")
+alert("Enter Num1 & Num2");
+else if(nn1==" ")
+alert("Enter Num1");
+else if(nn2==" ")
+alert("Enter Num2");
+else
+var su=nn1-nn2;
+document.getElementById("res").value = su;
+}
+function div()
+{
+var nn1=Number(document.getElementById("n1").value);
+var nn2=Number(document.getElementById("n2").value);
+if(nn1==" " && nn2 ==" ")
+alert("Enter Num1 & Num2");
+else if(nn1==" ")
+alert("Enter Num1");
+else if(nn2==" ")
+alert("Enter Num2");
+else
+var su=nn1/nn2;
+document.getElementById("res").value = su;
+}
+function clr()
+{
+document.getElementById("n1").value="";
+document.getElementById("n2").value="";
+document.getElementById("res").value="";
+}
+
+</script>
+<style>
+.center{
+ margin:150px;
+  width: 50%;
+  padding: 15px;
+  border: 15px solid green;
+outline-style: dashed;
+position: absolute;
+left: 13%;
+}
+</style>
+</head>
+
+<body >
+<div class="center">
+<center>
+<br />
+<h2><i> Simple Calculator </i></h2>
+<br /><br />
+<form>
+<p><b>Num1: </b>	<input type="number" id="n1"  />
+<p><b>Num2: </b>	<input type="number" id="n2"  />
+<p><b>Result: </b>	<input type="number" id="res" readonly />
+			<br /><br /><br />
+ <input type="button" class="btn btn-success" value="Add" onclick="add1()" />
+<input type="button" class="btn btn-success" value="Subtract" onclick="sub()" />
+<input type="button" class="btn btn-success" value="Divide" onclick="div()" />
+<input type="button" class="btn btn-success" value="Multiply" onclick="mul()" />
+<input type="button" class="btn btn-success" value="Clear" onclick="clr()" />
+</p>
+</form>
+</center>
+</div>
+</body>
+</html>
